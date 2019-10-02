@@ -67,11 +67,6 @@ def playlists_delete(playlist_id):
 @app.route('/playlists/comments', methods=['POST'])
 def comments_new():
     """Submit a new comment."""
-    return 'playlists comment'
-
-@app.route('/playlists/comments', methods=['POST'])
-def comments_new():
-    """Submit a new comment."""
     comment = {
         'title': request.form.get('title'),
         'content': request.form.get('content'),
